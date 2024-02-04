@@ -1,7 +1,7 @@
 #sql server connection
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=MS_DB_USER;encrypt=false
+    url: jdbc:sqlserver://sqlserver:1433;databaseName=MS_DB_USER;encrypt=false
     username: sa
     password: UltraSecret@2121
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
