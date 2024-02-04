@@ -1,9 +1,9 @@
 #sql server connection
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=MS_DB_USER
+    url: jdbc:sqlserver://localhost:1433;databaseName=MS_DB_USER;encrypt=false
     username: sa
-    password: 212121
+    password: UltraSecret@2121
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     hibernate:
@@ -12,3 +12,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+#server port
+server:
+  port: 9090
