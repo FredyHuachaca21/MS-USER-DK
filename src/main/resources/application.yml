@@ -1,0 +1,14 @@
+#sql server connection
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=MS_DB_USER
+    username: sa
+    password: 212121
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
